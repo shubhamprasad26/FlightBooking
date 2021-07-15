@@ -1,0 +1,66 @@
+<!--<nav class="navbar navbar-dark bg-dark navbar-toggler "
+ style="padding-bottom: 25px; position: fixed; width: 100%;" *ngIf="!isLoggedIn else loggedin"> 
+  <div class="container">
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <div class="col-md-2">
+              <a class="navbar-brand align-item-center " href="#">Cognizant Airlines</a>
+              </div>
+
+            
+            <div class="col-md-10"  style="text-align:right; position: relative;">
+              <a class="navbar-brand  " routerLink="/Login">Login</a>
+              <a class="navbar-brand  " routerLink="/Registration">Register</a>
+            </div>            
+        </div>
+      </div>
+    </div>
+</nav>
+<br>
+<ng-template #loggedin>-->
+  
+<nav class="navbar navbar-dark bg-dark navbar-toggler " style="padding-bottom: 25px; position: fixed; width: 100%;" > 
+    <div class="container-fluid">
+      <div class="container">
+          <div class="row" style="text-align: center;">
+              <div class="col-md-2">
+                <a class="navbar-brand align-item-center " routerLink="/Login">Cognizant Airlines</a>
+                </div>
+
+              <div class="col-md-6" *ngIf = "!isLoggedIn">
+                    <a class="navbar-brand align-item-center " routerLink = "/UserBook">Book Flights</a>
+                    <a class="navbar-brand align-item-center " routerLink = "/ManageBookings">Manage Bookings</a>
+                    <a class="navbar-brand align-item-center " routerLink = "/BookingHistory"> Booking History</a>
+              </div>
+             <!-- <div class="col-md-4"  style="text-align:right; position: relative;">
+                <a class="navbar-brand  " routerLink="/Login">Login</a>
+                <a class="navbar-brand  " routerLink="/Registration">Register</a>
+              </div>-->
+
+             <!-- <div *ngIf = "!isLoggedIn else logged" class="col-md-10">
+                 
+              </div>
+              <ng-template #logged>-->
+                  <div class="col-md-1 " style="text-align: right;">
+                    <a class="navbar-brand  " routerLink="/Login">Log Out</a>
+                  </div>
+              <!--</ng-template>-->
+                      </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <body>
+    <br>
+  </body>
+  <router-outlet></router-outlet>
+
+
+<!--</ng-template>-->
+
+
+  
+
+
+ 
+ 

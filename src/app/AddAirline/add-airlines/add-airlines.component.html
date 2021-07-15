@@ -1,0 +1,65 @@
+<div class="card" style="padding-block: 20px;">
+    <div class="container" style="padding-top: 30px; text-align: center; ">
+        <h1 style="padding-right: 30px;">Add Airlines</h1>
+        <div style="padding-top: 30px;" class="col-md-8">
+            <form #AddAirlines = 'ngForm'(submit) = addAirlines(AddAirlines)>
+                <div class="row">
+                    <div class="col-md-3">
+                    <div class="form-group">                        
+                        <label> Airline Name</label>
+                    </div>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" required ngModel name="AirlineName">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                    <div class="form-group">                        
+                        <label>Upload Logo</label>
+                    </div>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="file" class="form-control">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                    <div class="form-group">                        
+                        <label>Contact No</label>
+                    </div>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" required ngModel name="contactNo">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                    <div class="form-group">                        
+                        <label> Contact Address</label>
+                    </div>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" required ngModel name="ContactAddress">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="form-group">                        
+                            <label> </label>
+                        </div>
+                        </div>
+                    <div class="col-md-4">
+                        <button [disabled]=!AddAirlines.valid type="submit" class="btn btn-success" style="text-align: left;">Add New Airlines</button>
+                    </div>
+                </div>
+            </form>
+        
+        </div>
+    
+    </div>
+    </div>

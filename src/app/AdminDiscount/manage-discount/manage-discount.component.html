@@ -1,0 +1,51 @@
+<div class="row" style="padding-top: 40px; position: fixed;">
+            
+                <div class="jumbotron">    
+                <div class="container" >
+                    <div  class="row justify-content-center align-items-center" style="padding-left: 100px;">
+                
+                    <form #DiscountPage='ngForm' (submit)="Disc()">
+                        <h3 class="text-center text-dark">Generate a Discount</h3>
+                        <br>
+                        <br>
+
+                        <div class="form-group" class="row">
+                            <label for="Airlines"> Choose the Airline </label>
+                            <select name="Airlines" id="flight" [(ngModel)] = "mngdisc.AirLine">
+                                <option value="">--Select--</option>
+                                <option value="">Spice JET</option>
+                                <option value="">Indigo</option>
+                                <option value="">Air Asia</option>
+                                <option value="">Air India</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="text" class="text-dark">Code</label><br>
+                            <input type="text" required [(ngModel)] = "mngdisc.Code" name="Code" id="Code" class="form-control">
+                        </div>
+                        <br>
+                        
+                        <div class="form-group">
+                            <button [disabled]=!DiscountPage.valid class="btn btn-success">Check </button>
+
+                        </div>
+                        <div>
+                            
+                        </div>
+                        
+                    </form>
+                    <div *ngIf="count">
+                        <small class="text-success" >Congrats you have availed {{nos}}% Discount using above code. </small>
+                    </div>
+          
+                            
+                        </div>
+                    </div>
+        </div>
+       
+    
+        <app-footer-nav></app-footer-nav>
+    
+    
+    

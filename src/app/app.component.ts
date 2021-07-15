@@ -5,6 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'WireFrames';
+export class AppComponent  {
+  
+  title:string ="";
+  isLogged:boolean = false;
+  constructor()
+  {
+    this.title = 'WireFrames';
+    this.isLogged  = true;
+
+  }
+  
 }

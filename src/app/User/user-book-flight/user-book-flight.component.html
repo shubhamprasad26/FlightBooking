@@ -1,0 +1,50 @@
+
+    <div class="row" style="padding-top: 40px;">
+        <div class= "card-body"id="login" class="col-md-6" >    
+            <div class="container">
+            
+            <div class="container" style="padding-left: 80px; border-left: black; border-width: 10px;" >
+                <div  class="row justify-content-center align-items-left">
+                    
+                            <form #BookingDetails='ngForm' (submit)="bUser(BookingDetails)" style="border-right: black;">
+                                
+                                <div id="choice" style="padding-left: 50px;">
+                                <input type="radio" name="Flightway" name="Trip" value="oneway">
+                                <label class="form-check-label" for="Trip">One Way</label>
+                                <br>
+                                
+                                <input type="radio" name="Trip" value="rounday">
+                                <label class="form-check-label" for="Trip">Round Trip</label>
+                                </div>
+                                <br>
+                                <div style="padding-left: 50px;">
+                                <label>From : </label>
+                                
+                                <input type="text" style="text-align: center;">
+                                </div>
+                                <br>
+                                <div style="padding-left: 50px;">
+                                <label>To :</label>
+                                <input type=""> 
+                                </div>
+                                <br>
+                                
+                                
+                                
+                            </form>
+                        
+                </div>
+            </div>
+            </div>
+        
+        
+            </div>
+        <div style="position: fixed;">
+            <app-footer-nav></app-footer-nav>
+    
+        </div>
+
+<router-outlet></router-outlet>
+       
+    
+    
